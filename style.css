@@ -1,0 +1,43 @@
+body, html { 
+  margin:0; 
+  padding:0; 
+  height:100%; 
+  font-family: Arial, sans-serif; 
+}
+
+#viewDiv { 
+  height: 80%; 
+  width: 100%; 
+}
+
+#controls { 
+  height: 20%; 
+  padding:10px; 
+  background:#f5f5f5; 
+  display:flex; 
+  flex-direction:column; 
+  gap:10px; 
+}
+
+input { 
+  padding:6px; 
+  font-size:16px; 
+  width:300px; 
+}
+
+#resultsList { 
+  max-height:100px; 
+  overflow-y:auto; 
+  border:1px solid #ccc; 
+  background:white; 
+}
+
+#resultsList div { 
+  padding:5px; 
+  cursor:pointer; 
+  border-bottom:1px solid #ddd; 
+}
+
+#resultsList div:hover { 
+  background:#eee; 
+}
