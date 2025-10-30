@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Public Amenity Map - Abu Dhabi</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css">
-  <script src="https://js.arcgis.com/4.29/"></script>
+  <meta charset="UTF-8" />
+  <title>Abu Dhabi Amenities</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://js.arcgis.com/4.27/"></script>
 </head>
 <body>
+  <!-- Title Bar -->
+  <header>
+    <h1>Abu Dhabi Amenities</h1>
+  </header>
 
-<div id="controls">
-  <input type="text" id="searchInput" placeholder="Search by keyword (e.g., park, hospital)">
-  <div id="resultsList"></div>
-</div>
+  <!-- Map -->
+  <div id="viewDiv"></div>
 
-<div id="viewDiv"></div>
+  <!-- Floating Search Box -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search amenities..." />
+    <div id="resultsList"></div>
+  </div>
 
-<script src="app.js" type="module"></script>
+  <script src="app.js"></script>
 </body>
 </html>
