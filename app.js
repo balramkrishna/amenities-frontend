@@ -20,7 +20,7 @@ require([
     container: "viewDiv",
     map: map,
     center: [54.37, 24.47], // Abu Dhabi
-    zoom: 12
+    zoom: 10
   });
 
   let baseLayer = new GeoJSONLayer({
